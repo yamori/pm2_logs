@@ -44,7 +44,7 @@ This is a [vulnerability](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-201
 [Liferay](https://www.liferay.com) is a digital portal/platform product, which had a JSON (deserialization) and remove code execution [vulnerability](https://codewhitesec.blogspot.com/2020/03/liferay-portal-json-vulns.html) ([CVE-2020-7961](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7961)) in March of 2020 and documented by [Code White](https://codewhitesec.blogspot.com).  Bonus, someone created a [scanner](https://github.com/random-robbie/liferay-pwn) (github) for this vulnerability.
 
 
-2021-04-25T20:12:45: GET /solr/admin/info/system?wt=json 404 0.989 ms - 1103
+> `2021-04-25T20:12:45: GET /solr/admin/info/system?wt=json 404 0.989 ms - 1103`
 
 Ranked as the [#7 Web Service Exploit of 2020](https://blog.radware.com/security/2020/12/the-top-web-service-exploits-in-2020/), even though Apache [published an issue](https://issues.apache.org/jira/browse/SOLR-4882) back in 2013!  The above request is a scan looking for specific versions of Apache Solr (search platform), where a particular parameter is exposed and can lead to arbitrary file reading.  Apparently this is combined with some other vulnerabilities to eventually get to remote code execution, detailed in [CVE-2013-6397](https://nvd.nist.gov/vuln/detail/CVE-2013-6397).
 
