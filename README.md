@@ -1,6 +1,6 @@
 # Inspecting Malicious Requests
 
-I recently stood up a crude web application and my logs were capturing various requests my public IP was attracting.  I had seen some such requests before but finally decided it warranted a blog post, and you can read more here.
+I recently stood up a crude web application and my logs were capturing various requests my public IP was attracting.  I had seen some such requests before but finally decided it warranted a [blog post](https://matthewkindzerske.com/2021/06/28/10-malicious-requests-against-my-web-application/), and you can read more there.
 
 Otherwise, I'm posting this in a repository as a point of collaboration if any of my readers want to correct, inform, or expand.
 
